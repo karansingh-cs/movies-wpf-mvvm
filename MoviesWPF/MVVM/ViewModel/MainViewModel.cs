@@ -10,7 +10,7 @@ namespace MoviesWPF.MVVM.ViewModel
     {
         public MainViewModel()
         {
-
+            
         }
     }
 }
