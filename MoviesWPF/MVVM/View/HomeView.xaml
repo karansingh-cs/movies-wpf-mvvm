@@ -18,10 +18,89 @@
                 <Border.Background>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
                         <GradientStop Color="DeepSkyBlue" Offset="0.0"/>
-                        <GradientStop Color="DeepSkyBlue" Offset="1"/>
+                        <GradientStop Color="#5bc3ff" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,400,200"/>
+                </Border.Clip>
+
+                <Grid>
+                    <StackPanel>
+                        <TextBlock Text="Manchester by &#x0a;the sea"
+                                   Foreground="White"
+                                   FontSize="30"
+                                   Margin="20,10,10,0"/>
+                        <TextBlock Text="CAST: &#x0a;Cassey Affleck"
+                                   Foreground="White"
+                                   FontSize="20"
+                                   Margin="20,10,10,0"/>
+                    </StackPanel>
+
+                    <Image Source="/Images/doggy-dog.png"
+                           Width="250"
+                           Height="250"
+                           HorizontalAlignment="Right"
+                           VerticalAlignment="Bottom"
+                           Margin="0,0,-46,-55">
+                        <Image.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="15.169"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Image.RenderTransform>
+                    </Image>
+                </Grid>
+            </Border>
+
+            <Border Width="200"
+                    Height="200"
+                    CornerRadius="10"
+                    Margin="45,0,0,0">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="Orange" Offset="0.0"/>
+                        <GradientStop Color="Yellow" Offset="1"/>
                     </LinearGradientBrush>
                 </Border.Background>
             </Border>
+        </StackPanel>
+
+        <StackPanel>
+            <StackPanel.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="Margin" Value="15,0,0,0"/>
+                </Style>
+            </StackPanel.Resources>
+            <TextBlock Text="Most Watched"
+                   Foreground="White"
+                   FontSize="20"
+                   HorizontalAlignment="Left"
+                   Margin="0,0,0,10"/>
+            <StackPanel Orientation="Horizontal">
+                <Border Width="150"
+                       Height="150"
+                       Background="Gray"
+                       CornerRadius="15"
+                        Margin="0"/>
+                <Border Width="150"
+                       Height="150"
+                       Background="YellowGreen"
+                       CornerRadius="15"/>
+                <Border Width="150"
+                       Height="150"
+                       Background="Pink"
+                       CornerRadius="15"/>
+                <Border Width="150"
+                       Height="150"
+                       Background="LightYellow"
+                       CornerRadius="15"/>
+            </StackPanel>
         </StackPanel>
     </StackPanel>
 </UserControl>
