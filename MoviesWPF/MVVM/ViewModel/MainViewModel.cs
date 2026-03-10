@@ -25,6 +25,7 @@ namespace MoviesWPF.MVVM.ViewModel
         public MainViewModel()
         {
             HomeVM = new HomeViewModel();
+            CurrentView = HomeVM;
         }
     }
 }
